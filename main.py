@@ -44,3 +44,4 @@ def start():
       print("You have won!")
       badge1()
   
+start()
