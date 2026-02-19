@@ -22,7 +22,7 @@ def start():
   The Tuller Family [ 2 ]
   """)
   time.sleep(.25)
-  game_choice = int(input("> ")
+  game_choice = int(input("> "))
   if game_choice == 1:
     print("You have chosen [ Diddy's Dih ]")
     time.sleep(.5)
@@ -33,6 +33,13 @@ def start():
     if dice_roll >= 3:
       print("You have won!")
       badge1()
+    elif dice_roll <= 3:
+      print("You have lost.")
+      time.sleep(1)
+      print("Would you like to play again? y/n")
+      go_again = str("> "))
+      if go_again == "yes":
+        # CONTINUE THIS
   elif game_choice == 2:
     print("You have chosen [ The Tuller Family ]")
     time.sleep(.5)
@@ -43,5 +50,6 @@ def start():
     if dice_roll >= 4:
       print("You have won!")
       badge1()
-  
+
+
 start()
